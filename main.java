@@ -1,3 +1,5 @@
+package murillo.projeto;
+
 import java.util.Scanner;
 
 public class main {
@@ -15,6 +17,9 @@ public class main {
         System.out.print("Insira o valor de H: ");
         int h = teclado.nextInt();
         System.out.println("O valor digitado foi: "+h);
+
+        Teste teste = new Teste("Murillo");
+        System.out.println("nome = "+ teste.getNome());
     }
 
     static int multiplica(int x, int y){
