@@ -22,7 +22,7 @@ public class Carro {
     }
 
     public void freia(){
-        velocidade = velocidade - potencia_do_motor;
+        velocidade = velocidade - potencia_do_motor/2;
         if(velocidade < 0)
             velocidade = 0;
     }
