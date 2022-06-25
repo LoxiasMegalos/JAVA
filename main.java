@@ -5,7 +5,8 @@ import java.util.Scanner;
 public class main {
 
     public static void main (String [] args){
-        int a = 5, b =5;
+        int a = 5;
+        int b =5;
         int c = a + b;
 
         System.out.println("Valor de a: "+a+" Valor de b: "+b+" Valor da soma: "+c);
@@ -20,11 +21,27 @@ public class main {
 
         Teste teste = new Teste("Murillo");
         System.out.println("nome = "+ teste.getNome());
+
+        Carro ferrari = new Carro(10, 200);
+        System.out.println("A velocidade da ferrari sem acelerar eh: "+ ferrari.getVelocidade());
+
+        int x = 0;
+        while(x != 2110){
+            ferrari.acelera();
+            x++;
+        }
+        System.out.println("A velocidade da ferrari depois de "+ x+ " aceleradas eh: "+ ferrari.getVelocidade());
+
+        int y = 0;
+        while(y != 2110){
+            ferrari.freia();
+            y++;
+        }
+        System.out.println("A velocidade da ferrari depois de "+ y+ " freadas eh: "+ ferrari.getVelocidade());
     }
 
     static int multiplica(int x, int y){
-        int m = x * y;
-        return m;
+        return x * y;
     }
 
 }
