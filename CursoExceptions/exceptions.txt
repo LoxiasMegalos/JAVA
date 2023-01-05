@@ -1,0 +1,20 @@
+Criar suas próprias execessões
+Tratar bugs do código
+Evitar erros em casos específicos do código
+
+ao sacar uma conta - diferentes motivos para um sque ser bloqueado
+- fraude
+- dia da semana
+- limite
+
+Em Java - cada excessão será um objeto baseado na classe de Excessões
+
+Instanciar objeto do tipo da excessao, e utilizar o throw para jogar para o usuário
+
+Passar como parametro da exception uma mensagem String
+ArithmeticException erro = new ArithmeticException("deu errado");
+Outros objetos que nao sao referencias para Exceptions não são possiveis serem throw
+
+throw new ArithmeticException("deu errado");
+
+-> Criar sua própria excessão para lançar de maneira correta
